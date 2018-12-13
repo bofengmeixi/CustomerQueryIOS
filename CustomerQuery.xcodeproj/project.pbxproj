@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183B523A21C1F61E00B7D7BE /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B523921C1F61E00B7D7BE /* HttpRequest.m */; };
+		183B523D21C1FC3100B7D7BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183B523C21C1FC3100B7D7BE /* UIKit.framework */; };
+		183B523F21C1FC4500B7D7BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183B523E21C1FC4500B7D7BE /* Foundation.framework */; };
+		183B524121C1FC5500B7D7BE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 183B524021C1FC5500B7D7BE /* libz.tbd */; };
+		183B524321C1FC8200B7D7BE /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183B524221C1FC8200B7D7BE /* Network.framework */; };
+		183B524521C1FD2000B7D7BE /* UploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B524421C1FD2000B7D7BE /* UploadParam.m */; };
+		183B524721C1FE7C00B7D7BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183B524621C1FE7C00B7D7BE /* SystemConfiguration.framework */; };
+		183B524A21C24C2700B7D7BE /* HttpUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B524921C24C2700B7D7BE /* HttpUrl.m */; };
 		187D1B7F21B50F8B00E0C797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1B7E21B50F8B00E0C797 /* AppDelegate.m */; };
 		187D1B8221B50F8B00E0C797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1B8121B50F8B00E0C797 /* ViewController.m */; };
 		187D1B8521B50F8B00E0C797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D1B8321B50F8B00E0C797 /* Main.storyboard */; };
@@ -15,6 +23,9 @@
 		187D1B8D21B50F8E00E0C797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1B8C21B50F8E00E0C797 /* main.m */; };
 		187D1B9721B50F8E00E0C797 /* CustomerQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1B9621B50F8E00E0C797 /* CustomerQueryTests.m */; };
 		187D1BA221B50F8E00E0C797 /* CustomerQueryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1BA121B50F8E00E0C797 /* CustomerQueryUITests.m */; };
+		187D1BB221B6694200E0C797 /* CompanyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1BB121B6694200E0C797 /* CompanyListViewController.m */; };
+		187D1BB621B92EE700E0C797 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1BB521B92EE700E0C797 /* RootTableViewCell.m */; };
+		187D1BB821B93B8000E0C797 /* CompanyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1BB721B93B8000E0C797 /* CompanyInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183B523821C1F61E00B7D7BE /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		183B523921C1F61E00B7D7BE /* HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		183B523C21C1FC3100B7D7BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		183B523E21C1FC4500B7D7BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		183B524021C1FC5500B7D7BE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		183B524221C1FC8200B7D7BE /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		183B524421C1FD2000B7D7BE /* UploadParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadParam.m; sourceTree = "<group>"; };
+		183B524621C1FE7C00B7D7BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		183B524921C24C2700B7D7BE /* HttpUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpUrl.m; sourceTree = "<group>"; };
 		187D1B7A21B50F8B00E0C797 /* CustomerQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D1B7D21B50F8B00E0C797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		187D1B7E21B50F8B00E0C797 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +71,11 @@
 		187D1B9D21B50F8E00E0C797 /* CustomerQueryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomerQueryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D1BA121B50F8E00E0C797 /* CustomerQueryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerQueryUITests.m; sourceTree = "<group>"; };
 		187D1BA321B50F8E00E0C797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187D1BB021B6694200E0C797 /* CompanyListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompanyListViewController.h; sourceTree = "<group>"; };
+		187D1BB121B6694200E0C797 /* CompanyListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyListViewController.m; sourceTree = "<group>"; };
+		187D1BB421B92EE700E0C797 /* RootTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTableViewCell.h; sourceTree = "<group>"; };
+		187D1BB521B92EE700E0C797 /* RootTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
+		187D1BB721B93B8000E0C797 /* CompanyInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompanyInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183B524721C1FE7C00B7D7BE /* SystemConfiguration.framework in Frameworks */,
+				183B524321C1FC8200B7D7BE /* Network.framework in Frameworks */,
+				183B524121C1FC5500B7D7BE /* libz.tbd in Frameworks */,
+				183B523F21C1FC4500B7D7BE /* Foundation.framework in Frameworks */,
+				183B523D21C1FC3100B7D7BE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183B523721C1F5E600B7D7BE /* network */ = {
+			isa = PBXGroup;
+			children = (
+				183B523821C1F61E00B7D7BE /* HttpRequest.h */,
+				183B523921C1F61E00B7D7BE /* HttpRequest.m */,
+				183B524421C1FD2000B7D7BE /* UploadParam.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		183B523B21C1FC3100B7D7BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				183B524621C1FE7C00B7D7BE /* SystemConfiguration.framework */,
+				183B524221C1FC8200B7D7BE /* Network.framework */,
+				183B524021C1FC5500B7D7BE /* libz.tbd */,
+				183B523E21C1FC4500B7D7BE /* Foundation.framework */,
+				183B523C21C1FC3100B7D7BE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		183B524821C24C0300B7D7BE /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				183B524921C24C2700B7D7BE /* HttpUrl.m */,
+			);
+			path = bean;
+			sourceTree = "<group>";
+		};
 		187D1B7121B50F8B00E0C797 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +145,7 @@
 				187D1B9521B50F8E00E0C797 /* CustomerQueryTests */,
 				187D1BA021B50F8E00E0C797 /* CustomerQueryUITests */,
 				187D1B7B21B50F8B00E0C797 /* Products */,
+				183B523B21C1FC3100B7D7BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +162,8 @@
 		187D1B7C21B50F8B00E0C797 /* CustomerQuery */ = {
 			isa = PBXGroup;
 			children = (
+				183B524821C24C0300B7D7BE /* bean */,
+				183B523721C1F5E600B7D7BE /* network */,
 				187D1B7D21B50F8B00E0C797 /* AppDelegate.h */,
 				187D1B7E21B50F8B00E0C797 /* AppDelegate.m */,
 				187D1B8021B50F8B00E0C797 /* ViewController.h */,
@@ -110,6 +173,11 @@
 				187D1B8821B50F8E00E0C797 /* LaunchScreen.storyboard */,
 				187D1B8B21B50F8E00E0C797 /* Info.plist */,
 				187D1B8C21B50F8E00E0C797 /* main.m */,
+				187D1BB021B6694200E0C797 /* CompanyListViewController.h */,
+				187D1BB121B6694200E0C797 /* CompanyListViewController.m */,
+				187D1BB421B92EE700E0C797 /* RootTableViewCell.h */,
+				187D1BB521B92EE700E0C797 /* RootTableViewCell.m */,
+				187D1BB721B93B8000E0C797 /* CompanyInfo.m */,
 			);
 			path = CustomerQuery;
 			sourceTree = "<group>";
@@ -262,9 +330,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187D1BB221B6694200E0C797 /* CompanyListViewController.m in Sources */,
 				187D1B8221B50F8B00E0C797 /* ViewController.m in Sources */,
 				187D1B8D21B50F8E00E0C797 /* main.m in Sources */,
 				187D1B7F21B50F8B00E0C797 /* AppDelegate.m in Sources */,
+				183B523A21C1F61E00B7D7BE /* HttpRequest.m in Sources */,
+				187D1BB621B92EE700E0C797 /* RootTableViewCell.m in Sources */,
+				183B524521C1FD2000B7D7BE /* UploadParam.m in Sources */,
+				187D1BB821B93B8000E0C797 /* CompanyInfo.m in Sources */,
+				183B524A21C24C2700B7D7BE /* HttpUrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
