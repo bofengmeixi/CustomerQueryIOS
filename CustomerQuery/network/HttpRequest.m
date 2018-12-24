@@ -43,6 +43,34 @@ parameters:(id)parameters
     //
 }
 
+
+-(NSString *)login:(NSString *)usename
+          withPassword:(id)password
+{
+    NSURL *url = [NSURL URLWithString:@"http://54.222.236.168:8084/AuthTest"];
+    
+    
+    //第二步，通过URL创建网络请求
+    
+    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    
+    NSMutableURLRequest *mutableRequest = [request mutableCopy];    //拷贝request
+    NSString *auth=[[usename stringByAppendingString:@":"]stringByAppendingString:password];
+    auth=[self encode:auth];
+    auth=[@"Basic " stringByAppendingString:auth];
+    //[mutableRequest addValue:@"Basic MTIzNDU2OjEyMzQ1Ng==" forHTTPHeaderField:@"Authorization"];
+    [mutableRequest addValue:auth forHTTPHeaderField:@"Authorization"];
+    request = [mutableRequest copy];
+    
+    
+    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    
+    
+    NSString *str = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];
+    return str;
+}
+
 - (NSString *)encode:(NSString *)string
 {
     //先将string转换成data

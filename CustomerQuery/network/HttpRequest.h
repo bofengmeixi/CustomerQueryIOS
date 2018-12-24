@@ -32,6 +32,9 @@ typedef NS_ENUM(NSUInteger,HttpRequestType) {
 -(NSString *)httpGet:(NSString *)URLString
     parameters:(id)parameters;
 
+-(NSString *)login:(NSString *)usename
+      withPassword:(id)password;
+
 /**
  *  发送get请求
  *

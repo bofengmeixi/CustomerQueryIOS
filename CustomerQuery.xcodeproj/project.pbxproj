@@ -15,6 +15,9 @@
 		183B524521C1FD2000B7D7BE /* UploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B524421C1FD2000B7D7BE /* UploadParam.m */; };
 		183B524721C1FE7C00B7D7BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183B524621C1FE7C00B7D7BE /* SystemConfiguration.framework */; };
 		183B524A21C24C2700B7D7BE /* HttpUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B524921C24C2700B7D7BE /* HttpUrl.m */; };
+		1845A13121C7B0B100C52E7F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845A13021C7B0B100C52E7F /* LoginViewController.m */; };
+		1845A13421C8A4FB00C52E7F /* CQPointHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845A13321C8A4FB00C52E7F /* CQPointHUD.m */; };
+		1845A13F21CC8E9000C52E7F /* ToastUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845A13E21CC8E9000C52E7F /* ToastUtils.m */; };
 		187D1B7F21B50F8B00E0C797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1B7E21B50F8B00E0C797 /* AppDelegate.m */; };
 		187D1B8221B50F8B00E0C797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D1B8121B50F8B00E0C797 /* ViewController.m */; };
 		187D1B8521B50F8B00E0C797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D1B8321B50F8B00E0C797 /* Main.storyboard */; };
@@ -55,6 +58,12 @@
 		183B524421C1FD2000B7D7BE /* UploadParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadParam.m; sourceTree = "<group>"; };
 		183B524621C1FE7C00B7D7BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		183B524921C24C2700B7D7BE /* HttpUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpUrl.m; sourceTree = "<group>"; };
+		1845A12F21C7B0B100C52E7F /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1845A13021C7B0B100C52E7F /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1845A13221C8A4FB00C52E7F /* CQPointHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQPointHUD.h; sourceTree = "<group>"; };
+		1845A13321C8A4FB00C52E7F /* CQPointHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQPointHUD.m; sourceTree = "<group>"; };
+		1845A13D21CC8E9000C52E7F /* ToastUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastUtils.h; sourceTree = "<group>"; };
+		1845A13E21CC8E9000C52E7F /* ToastUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUtils.m; sourceTree = "<group>"; };
 		187D1B7A21B50F8B00E0C797 /* CustomerQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D1B7D21B50F8B00E0C797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		187D1B7E21B50F8B00E0C797 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +147,15 @@
 			path = bean;
 			sourceTree = "<group>";
 		};
+		1845A13C21CC8E6A00C52E7F /* util */ = {
+			isa = PBXGroup;
+			children = (
+				1845A13D21CC8E9000C52E7F /* ToastUtils.h */,
+				1845A13E21CC8E9000C52E7F /* ToastUtils.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		187D1B7121B50F8B00E0C797 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +180,7 @@
 		187D1B7C21B50F8B00E0C797 /* CustomerQuery */ = {
 			isa = PBXGroup;
 			children = (
+				1845A13C21CC8E6A00C52E7F /* util */,
 				183B524821C24C0300B7D7BE /* bean */,
 				183B523721C1F5E600B7D7BE /* network */,
 				187D1B7D21B50F8B00E0C797 /* AppDelegate.h */,
@@ -178,6 +197,10 @@
 				187D1BB421B92EE700E0C797 /* RootTableViewCell.h */,
 				187D1BB521B92EE700E0C797 /* RootTableViewCell.m */,
 				187D1BB721B93B8000E0C797 /* CompanyInfo.m */,
+				1845A12F21C7B0B100C52E7F /* LoginViewController.h */,
+				1845A13021C7B0B100C52E7F /* LoginViewController.m */,
+				1845A13221C8A4FB00C52E7F /* CQPointHUD.h */,
+				1845A13321C8A4FB00C52E7F /* CQPointHUD.m */,
 			);
 			path = CustomerQuery;
 			sourceTree = "<group>";
@@ -333,8 +356,11 @@
 				187D1BB221B6694200E0C797 /* CompanyListViewController.m in Sources */,
 				187D1B8221B50F8B00E0C797 /* ViewController.m in Sources */,
 				187D1B8D21B50F8E00E0C797 /* main.m in Sources */,
+				1845A13421C8A4FB00C52E7F /* CQPointHUD.m in Sources */,
 				187D1B7F21B50F8B00E0C797 /* AppDelegate.m in Sources */,
+				1845A13121C7B0B100C52E7F /* LoginViewController.m in Sources */,
 				183B523A21C1F61E00B7D7BE /* HttpRequest.m in Sources */,
+				1845A13F21CC8E9000C52E7F /* ToastUtils.m in Sources */,
 				187D1BB621B92EE700E0C797 /* RootTableViewCell.m in Sources */,
 				183B524521C1FD2000B7D7BE /* UploadParam.m in Sources */,
 				187D1BB821B93B8000E0C797 /* CompanyInfo.m in Sources */,

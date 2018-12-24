@@ -53,7 +53,7 @@
     [self.contentView addSubview:self.companyIdLabel];
     
     //4.月事件量
-    self.eventLimitLabel = [[UILabel alloc] initWithFrame:CGRectMake(width/2-10, CGRectGetMinY(self.companyIdLabel.frame), width/2, 30)];
+    self.eventLimitLabel = [[UILabel alloc] initWithFrame:CGRectMake(width/2-20, CGRectGetMinY(self.companyIdLabel.frame), width/2, 30)];
     //[self.eventLimitLabel sizeToFit];
     [self.contentView addSubview:self.eventLimitLabel];
     

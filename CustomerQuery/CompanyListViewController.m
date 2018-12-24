@@ -9,6 +9,7 @@
 #import "CompanyListViewController.h"
 #import "RootTableViewCell.h"
 #import "HttpRequest.h"
+#import "util/ToastUtils.h"
 
 @interface CompanyListViewController ()
 @property (nonatomic, strong) NSArray *arrayData;
@@ -38,12 +39,42 @@
         NSString *url=@"http://54.222.236.168:8084/v1/name/";
         content=[httpRequest httpGet:url parameters:_companyName];
     }
-    if (content!=nil) {
+    if (content!=nil&&![@"" isEqualToString:content]) {
+        if([content containsString:@"Bad credentials"]){
+            
+            [self removeLoginInfo];
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+            
+            id mainViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginView"];
+            
+            [self presentViewController:mainViewController animated:YES completion:^{
+            }];
+        }
         NSArray *array=[self toArrayOrNSDictionary:content];
         if (array!=nil) {
             arrayData=array;
         }
+    }else{
+        __block UITextView *toastView = [[UITextView alloc] init];
+        toastView=[ToastUtils toastTip:@"请求失败" withToast:toastView];
+        [self.view addSubview:toastView];
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
+        
+        dispatch_after(popTime, dispatch_get_main_queue(), ^() {
+            [toastView removeFromSuperview];
+            toastView = nil;
+        });
     }
+}
+
+-(void) removeLoginInfo {
+    //获取UserDefaults单例
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    //移除UserDefaults中存储的用户信息
+    [userDefaults removeObjectForKey:@"name"];
+    [userDefaults removeObjectForKey:@"password"];
+    [userDefaults synchronize];
 }
 
 -  (id)toArrayOrNSDictionary:(NSString *)jsonString{
